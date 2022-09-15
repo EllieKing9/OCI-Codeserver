@@ -52,11 +52,14 @@ $sudo curl -fsSL https://code-server.dev/install.sh | sh
   
   + sudo dpkg -i ~/.cache/code-server/code-server_4.7.0_amd64.deb
 
-$code-server
+$code-server  
 
   - info Wrote default config file to ~/.config/code-server/config.yaml
+  - 설정 변경: $sudo nano ~/.config/code-server/config.yaml
 
 Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록!
+
+------------------------------
 
 방화벽 세팅하여 사용
   - https://blog.naver.com/afy/222720018657   |   https://youngq.tistory.com/97?category=868706
