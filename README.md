@@ -54,8 +54,20 @@ $sudo curl -fsSL https://code-server.dev/install.sh | sh
 
 $code-server
 
-   - info Wrote default config file to ~/.config/code-server/config.yaml
+  - info Wrote default config file to ~/.config/code-server/config.yaml
 
 Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록!
+
+방화벽 세팅하여 사용
+  - https://blog.naver.com/afy/222720018657   |   https://youngq.tistory.com/97?category=868706
+  
+Nginx 설치해서 사용
+  - https://hakawati.co.kr/445
+  
+  - Nginx 설명 https://icarus8050.tistory.com/57    |   https://extrememanual.net/9976
+  - 환경 설정 https://12bme.tistory.com/366   |   https://server-talk.tistory.com/304
+  - SSL 설정 https://server-talk.tistory.com/315?category=925489    |   
+  - https://www.lesstif.com/system-admin/nginx-24444975.html
+
 
 
