@@ -1,18 +1,18 @@
-# OCI_code
+# OCI Code_Server Nginx
 
 Oracle Cloud Free Tier 가입
 
 https://www.oracle.com/kr/cloud/
 
-  https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm
+  - https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm
   
-  OCI 기본용어 http://taewan.kim/oci_docs/00_oci/terminologies/
+  - OCI 기본용어 http://taewan.kim/oci_docs/00_oci/terminologies/
 
-  OCPU (Oracle ComPute Unit)
+  - OCPU (Oracle ComPute Unit)
 
 리소스실행 > VM 인스턴스 생성 > VM.Standard.E2.1.Micro (Free)
 
-  가상 머신, 1 core OCPU, 1 GB memory, 0.48 Gbps network bandwidth
+  - 가상 머신, 1 core OCPU, 1 GB memory, 0.48 Gbps network bandwidth
 
 이미지 및 구성 > 편집 > 이미지 변경
 
@@ -54,7 +54,7 @@ $sudo curl -fsSL https://code-server.dev/install.sh | sh
 
 $code-server
 
-   info Wrote default config file to ~/.config/code-server/config.yaml
+   - info Wrote default config file to ~/.config/code-server/config.yaml
 
 Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록!
 
