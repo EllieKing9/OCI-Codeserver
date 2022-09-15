@@ -63,14 +63,16 @@ Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록!
 
 방화벽 세팅하여 사용
   - https://blog.naver.com/afy/222720018657   |   https://youngq.tistory.com/97?category=868706
+  - OCI _ Home _ Networking _ VCN _ VCN name 클릭 _ Subnet name 클릭 _ Security List name 클릭 _ Inbound 규칙 추가 _ 0.0.0.0/0 TCP "8080"
+  - ubuntu 접속 _ 세팅 부랴부랴
   
 Nginx 설치해서 사용
   - https://hakawati.co.kr/445
   
   - Nginx 설명 https://icarus8050.tistory.com/57    |   https://extrememanual.net/9976
   - 환경 설정 https://12bme.tistory.com/366   |   https://server-talk.tistory.com/304
-  - SSL 설정 https://server-talk.tistory.com/315?category=925489    |   
-  - https://www.lesstif.com/system-admin/nginx-24444975.html
+  - SSL 설정 https://server-talk.tistory.com/315?category=925489
+  - 가상 호스트 https://www.lesstif.com/system-admin/nginx-24444975.html
 
 
 
