@@ -40,14 +40,15 @@ PuTTY 세팅
 
 host Name: OCI VM IP address 
 Connection type: SSH
-Putty > SSH > Auth > Browse... > *.ppk 선택
+Putty > Category > Connection > SSH > Auth > Browse... > *.ppk 선택
+Putty > Category > Connection > Data > Auto-login username 기입
 
 --------------------------
 
 pwd > /homw/ubuntu
 
 code server 설치
-
+```
 $sudo curl -fsSL https://code-server.dev/install.sh | sh
 
   + mkdir -p ~/.cache/code-server
@@ -59,17 +60,33 @@ $sudo curl -fsSL https://code-server.dev/install.sh | sh
   + sudo dpkg -i ~/.cache/code-server/code-server_4.7.0_amd64.deb
 
 $code-server  
-
+```
   - info Wrote default config file to ~/.config/code-server/config.yaml
   - 설정 변경: $sudo nano ~/.config/code-server/config.yaml
 
-Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록!
+error RSA PRIVATE KEY not found from openssl output 인 경우
+*pem 를 직접 등록
+```
+mkcert로 유효한 키를 수동으로 만들어서 사용
+~/.config/code-server/config.yaml
+cert: 경로/*.pem
+cert-key: 경로/*key.pem
+```
+mkcert 설명 : https://github.com/coder/code-server/issues/5162
+
+openssl로 인증서 만들기?!
+
+Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록?!
 
 ------------------------------
 
 방화벽 세팅하여 사용
-  - https://blog.naver.com/afy/222720018657   |   https://youngq.tistory.com/97?category=868706
+  - https://blog.naver.com/afy/222720018657
+ 
+  - https://youngq.tistory.com/97?category=868706
+ 
   - OCI _ Home _ Networking _ VCN _ VCN name 클릭 _ Subnet name 클릭 _ Security List name 클릭 _ Inbound 규칙 추가 _ 0.0.0.0/0 TCP "8080"
+  
   - ubuntu 접속 _ 세팅 부랴부랴
   
 Nginx 설치해서 사용
@@ -80,5 +97,7 @@ Nginx 설치해서 사용
   - SSL 설정 https://server-talk.tistory.com/315?category=925489
   - 가상 호스트 https://www.lesstif.com/system-admin/nginx-24444975.html
 
+```
 
+```
 
