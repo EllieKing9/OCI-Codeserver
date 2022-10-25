@@ -1,4 +1,4 @@
-# OCI Code_Server Nginx
+# OCI Code_server Nginx
 
 Oracle Cloud Free Tier 가입
 
@@ -26,15 +26,21 @@ https://www.oracle.com/kr/cloud/
 
 https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingpublicIPs.htm
 
-SSH 키 추가 > 자동으로 키 쌍 생성 > 전용, 공용 키 저장
+SSH 키 추가 > 자동으로 키 쌍 생성 > 전용(*.key), 공용(*.key.pub) 키 저장
 
 -------------------------
 
 SSH 키 쌍을 자동으로 생성하여 저장한 경우
 
 PuTTYgen > Load > all files > *.key 선택 > Successfully imported > Save private key
+*.ppk 로 저장됨
 
-Putty > SSH > Auth > Browse... > 
+--------------------------
+PuTTY 세팅
+
+host Name: OCI VM IP address 
+Connection type: SSH
+Putty > SSH > Auth > Browse... > *.ppk 선택
 
 --------------------------
 
