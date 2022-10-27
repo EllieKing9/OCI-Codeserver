@@ -49,32 +49,34 @@ pwd > /homw/ubuntu
 
 code server 설치
 ```
+//자동설치
 $sudo curl -fsSL https://code-server.dev/install.sh | sh
 
-  + mkdir -p ~/.cache/code-server
-  
-  + curl -#fL -o ~/.cache/code-server/code-server_4.7.0_amd64.deb.incomplete -C -https://github.com/coder/code-server/releases/download/v4.7.0/code-server_4.7.0_amd64.deb
+//수동설치
+$mkdir -p ~/.cache/code-server
+$curl -#fL -o ~/.cache/code-server/code-server_4.7.0_amd64.deb.incomplete -C -https://github.com/coder/code-server/releases/download/v4.7.0/code-server_4.7.0_amd64.deb
+$mv ~/.cache/code-server/code-server_4.7.0_amd64.deb.incomplete ~/.cache/code-server/code-server_4.7.0_amd64.deb
+$sudo dpkg -i ~/.cache/code-server/code-server_4.7.0_amd64.deb
 
-  + mv ~/.cache/code-server/code-server_4.7.0_amd64.deb.incomplete ~/.cache/code-server/code-server_4.7.0_amd64.deb
-  
-  + sudo dpkg -i ~/.cache/code-server/code-server_4.7.0_amd64.deb
+//설정
+$sudo nano ~/.config/code-server/config.yaml
 
-$code-server  
+//실행
+$code-server
+  + info Wrote default config file to ~/.config/code-server/config.yaml
 ```
-  - info Wrote default config file to ~/.config/code-server/config.yaml
-  - 설정 변경: $sudo nano ~/.config/code-server/config.yaml
+설정 참고: https://github.com/EllieKing9/node
 
 error RSA PRIVATE KEY not found from openssl output 인 경우
 *pem 를 직접 등록
-```
-mkcert로 유효한 키를 수동으로 만들어서 사용
-~/.config/code-server/config.yaml
-cert: 경로/*.pem
-cert-key: 경로/*key.pem
-```
+1. mkcert로 유효한 키를 수동으로 만들어서 사용
 mkcert 설명 : https://github.com/coder/code-server/issues/5162
-
-openssl로 인증서 만들기?!
+```
+$nano ~/.config/code-server/config.yaml
+  + cert: 경로/*.pem
+  + cert-key: 경로/*key.pem
+```
+2. openssl로 인증서 만들기?!
 
 Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록?!
 
