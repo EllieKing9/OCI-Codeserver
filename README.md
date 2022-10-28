@@ -84,6 +84,7 @@ Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록?!
   - OCI _ Home _ Networking _ VCN _ VCN name 클릭 _ Subnet name 클릭 _ Security List name 클릭 _ Inbound 규칙 추가 _ 0.0.0.0/0 TCP "8080"
   
   - ubuntu 접속 _ 세팅 부랴부랴
+  $sudo iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
   
 Nginx 설치해서 사용
   - https://hakawati.co.kr/445
