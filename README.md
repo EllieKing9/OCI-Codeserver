@@ -79,7 +79,15 @@ $nano ~/.config/code-server/config.yaml
 2. openssl로 인증서 만들기?!
 
 Ubuntu 실행시 code-server가 자동 실행 되도록 service 등록?!
-
+```
+$sudo systemctl enable --now code-server
+//sudo systemctl enable --now code-server@$USER
+! WSL에서는 systemctl 를 지원하지 않는다 //systemctl(x) -> service(o)
+$sudo systemctl start code-server //실행
+$sudo systemctl stop code-server //중지
+$sudo systemctl restart code-server //재시작
+$sudo systemctl status code-server 
+```
 ------------------------------
 
 방화벽 세팅하여 사용
