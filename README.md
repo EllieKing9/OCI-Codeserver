@@ -1,8 +1,8 @@
 # OCI code-server Nginx
 
-Oracle Cloud Free Tier 가입 (https://www.oracle.com/kr/cloud/)
+■ Oracle Cloud Free Tier 가입 (https://www.oracle.com/kr/cloud/)
 
-컴퓨트 인스턴스 생성
+■ 컴퓨트 인스턴스 생성
 1. 리소스실행 > VM 인스턴스 생성 > VM.Standard.E2.1.Micro (Free)
 - 가상 머신, 1 core OCPU(Oracle ComPute Unit), 1 GB memory, 0.48 Gbps network bandwidth
 - Oracle 제공 문서 (https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
@@ -26,14 +26,14 @@ Oracle Cloud Free Tier 가입 (https://www.oracle.com/kr/cloud/)
 
 -------------------------
 
-SSH 키 쌍을 자동으로 생성하여 저장한 경우
+■ SSH 키 쌍을 자동으로 생성하여 저장한 경우
 
 PuTTYgen > Load > all files > *.key 선택 > Successfully imported > Save private key
 *.ppk 로 저장하여 PuTTY SSH 접속시 사용
 
 --------------------------
 
-PuTTY 세팅
+■ PuTTY 세팅
 
 host Name: OCI VM IP address 
 Connection type: SSH
@@ -42,7 +42,7 @@ Putty > Category > Connection > Data > Auto-login username 기입
 
 --------------------------
 
-code server 설치
+■ code server 설치
 ```
 //SSH connect > Ubuntu on Oracle Cloud
 
@@ -94,6 +94,6 @@ $nano ~/.config/code-server/config.yaml
 
 --------------------------
 
-Nginx 설치하여 사용
+■ Nginx 설치하여 사용
 ==> https://github.com/EllieKing9/nginx/blob/main/README.md
 - HTTPS 사용하는 이유 읽어볼만 (https://youngq.tistory.com/97?category=868706)
