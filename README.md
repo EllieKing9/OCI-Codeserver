@@ -1,4 +1,4 @@
-# OCI Code_server Nginx
+# OCI code-server Nginx
 
 Oracle Cloud Free Tier 가입 (https://www.oracle.com/kr/cloud/)
 
